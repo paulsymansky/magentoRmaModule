@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<config>
+	<global>
+		<blocks>
+			<adminhtml>
+				<rewrite>
+					<sales_order_view>SymTechLabs_Rma_Block_Adminhtml_Sales_Order_View</sales_order_view>
+				</rewrite>
+			</adminhtml>
+		</blocks>
+		<models>
+			<rma>
+				<class>SymTechLabs_Rma_Model</class>
+			</rma>
+		</models>
+		<events>
+			<sales_order_invoice_register>
+				<observers>
+					<rma_observer>
+						<type>model</type>
+						<class>SymTechLabs_Rma_Model_Observer</class>
+						<method>invoiceObserver</method>
+					</rma_observer>
+				</observers>
+			</sales_order_invoice_register>
+		</events>
+		<template>
+			<email>
+				<rma_email_template translate="label">
+					<label>RMA Information</label>
+					<file>rma/stl_rma.html</file>
+					<type>html</type>
+				</rma_email_template>
+				<sma_email_template translate="label">
+					<label>SMA Information</label>
+					<file>rma/stl_sma.html</file>
+					<type>html</type>
+				</sma_email_template>
+				<received_email_template translate="label">
+					<label>Received Information</label>
+					<file>rma/stl_received.html</file>
+					<type>html</type>
+				</received_email_template>
+			</email>
+		</template>
+	</global>
+	<admin>
+		<routers>
+			<rma>
+				<use>admin</use>
+				<args>
+					<module>SymTechLabs_Rma</module>
+					<frontName>rma</frontName>
+				</args>
+			</rma>
+		</routers>
+	</admin>
+</config>
