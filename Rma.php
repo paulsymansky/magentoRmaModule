@@ -12,9 +12,9 @@
  * @method string getWrappedText(string $string, Zend_Pdf_Font $font, int $font_size, int $max_width)
  * @method int widthForStringUsingFontSize(string $string, Zend_Pdf_Font $font, int $font_size)
  *
- * @category    SymTechLabs
- * @package     SymTechLabs_Rma
- * @author      SymTech Laboratories, LLC <support@symtechlabs.com>
+ * @category    Customizations
+ * @package     Customizations_Rma
+ * @author      n/a
  */
 
 class SymTechLabs_Rma_Model_Rma extends Mage_Core_Model_Abstract{
