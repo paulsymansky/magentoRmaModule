@@ -4,15 +4,15 @@
  *
  * @method indexAction()
  *
- * @category    customizations
- * @package     customizationsRma
+ * @category    Customizations
+ * @package     Customizations_Rma
  * @author      n/a
  */
 
-class SymTechLabs_Rma_IndexController extends Mage_Adminhtml_Controller_Action{
+class Customizations_Rma_IndexController extends Mage_Adminhtml_Controller_Action{
 
 	/**
-	* Routes GET requests from button clicks to SymTechLabs_Rma_Model_Rma class
+	* Routes GET requests from button clicks to Customizations_Rma_Model_Rma class
 	*/
 	public function indexAction(){
 		$model = Mage::getModel('rma/rma');
