@@ -4,13 +4,13 @@
 		<blocks>
 			<adminhtml>
 				<rewrite>
-					<sales_order_view>SymTechLabs_Rma_Block_Adminhtml_Sales_Order_View</sales_order_view>
+					<sales_order_view>Customizations_Rma_Block_Adminhtml_Sales_Order_View</sales_order_view>
 				</rewrite>
 			</adminhtml>
 		</blocks>
 		<models>
 			<rma>
-				<class>SymTechLabs_Rma_Model</class>
+				<class>Customizations_Rma_Model</class>
 			</rma>
 		</models>
 		<events>
@@ -18,7 +18,7 @@
 				<observers>
 					<rma_observer>
 						<type>model</type>
-						<class>SymTechLabs_Rma_Model_Observer</class>
+						<class>Customizations_Rma_Model_Observer</class>
 						<method>invoiceObserver</method>
 					</rma_observer>
 				</observers>
@@ -49,7 +49,7 @@
 			<rma>
 				<use>admin</use>
 				<args>
-					<module>SymTechLabs_Rma</module>
+					<module>Customizations_Rma</module>
 					<frontName>rma</frontName>
 				</args>
 			</rma>
