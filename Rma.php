@@ -17,7 +17,7 @@
  * @author      n/a
  */
 
-class SymTechLabs_Rma_Model_Rma extends Mage_Core_Model_Abstract{
+class Customizations_Rma_Model_Rma extends Mage_Core_Model_Abstract{
 
 	/**
 	* Order types
