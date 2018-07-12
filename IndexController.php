@@ -4,9 +4,9 @@
  *
  * @method indexAction()
  *
- * @category    SymTechLabs
- * @package     SymTechLabs_Rma
- * @author      SymTech Laboratories, LLC <support@symtechlabs.com>
+ * @category    customizations
+ * @package     customizationsRma
+ * @author      n/a
  */
 
 class SymTechLabs_Rma_IndexController extends Mage_Adminhtml_Controller_Action{
